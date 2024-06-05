@@ -1,0 +1,1 @@
+::: vertexai.vision_models

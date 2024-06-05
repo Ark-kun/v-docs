@@ -1,0 +1,1 @@
+::: vertexai.generative_models

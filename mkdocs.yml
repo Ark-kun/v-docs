@@ -1,0 +1,99 @@
+site_name: Vertex SDK
+
+site_description: "Google Cloud Vertex AI SDK."
+#site_url: "https://github.com/googleapis/python-aiplatform"
+repo_url: "https://github.com/googleapis/python-aiplatform"
+repo_name: "googleapis/python-aiplatform"
+
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.tabs
+
+plugins:
+- search
+- mkdocstrings:
+    handlers:
+      python:
+        options:
+          # General:
+          # show_inheritance_diagram: true
+
+          # Headings:
+          show_root_heading: true  # Show module info
+
+          # Members:
+          inherited_members: true  # ! Important for GenerativeModel
+          members_order: source
+          group_by_category: true
+          summary: true  # Sponsors only —  Insiders 1.2.0
+          filters:
+          - "!^_"  # Removing __repr__, __name__, __module__, __all__
+
+          # Docstrings
+          docstring_options:
+            ignore_init_summary: true
+          docstring_section_style: spacy  # Looks nice
+          merge_init_into_class: true
+          show_if_no_docstring: true  # ! Important. Many functions don't have docstrings.
+
+          # Signatures
+          modernize_annotations: true  #  Insiders 1.8.0 — This feature also requires Griffe Insiders to be installed.
+          show_signature_annotations: true  # !
+          separate_signature: true  # !
+          signature_crossrefs: true
+
+
+
+# From mkdocstring website
+# - markdown-exec
+
+# From mkdocstring website
+markdown_extensions:
+- attr_list
+- admonition
+# - callouts
+- footnotes
+- pymdownx.details
+- pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+- pymdownx.highlight:
+    pygments_lang_class: true
+- pymdownx.inlinehilite:
+    style_plain_text: python
+- pymdownx.magiclink
+- pymdownx.snippets:
+    base_path: [!relative $config_dir]
+    check_paths: true
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+    slugify: !!python/object/apply:pymdownx.slugs.slugify
+      kwds:
+        case: lower
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+
+
+nav:
+#  - Overview: index.md
+#  - Vertex AI:
+#    - Stable:
+      - Overview: index.md
+      #- vertexai: vertexai/index.md   # Bug in mkdocstrings
+      - Generative models: vertexai/generative_models.md
+      - Language models: vertexai/language_models.md
+      - Vision models: vertexai/vision_models.md
+
+
+      - Preview:
+        - vertexai.preview: vertexai/preview/index.md
+        - vertexai/preview/generative_models.md
+        - vertexai/preview/language_models.md
+        - vertexai/preview/vision_models.md
+#        - vertexai/preview/tuning.md  # Bug in mkdocstrings
+#        - vertexai/preview/batch_prediction.md  # Bug in mkdocstrings
+#        - vertexai/preview/evaluation.md  # Classes are not expanded (likely due to re-export)
