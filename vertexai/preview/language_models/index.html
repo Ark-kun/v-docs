@@ -10,9 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://github.com/googleapis/python-aiplatform/vertexai/preview/language_models/">
+      
+        <link rel="prev" href="../generative_models/">
       
       
+        <link rel="next" href="../vision_models/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -242,6 +244,26 @@
   
 
       
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  Preview
+
+        </a>
+      </li>
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -367,6 +389,845 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Preview
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Preview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    vertexai.preview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generative_models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generative models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Language models
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Language models
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models" class="md-nav__link">
+    <span class="md-ellipsis">
+      language_models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="language_models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.ChatModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatModel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.ChatSession" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatSession
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CodeChatModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      CodeChatModel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CodeChatSession" class="md-nav__link">
+    <span class="md-ellipsis">
+      CodeChatSession
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CodeGenerationModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      CodeGenerationModel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      TextGenerationModel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbeddingModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      TextEmbeddingModel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.ChatMessage" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatMessage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChatMessage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.ChatMessage.content" class="md-nav__link">
+    <span class="md-ellipsis">
+      content
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.ChatMessage.author" class="md-nav__link">
+    <span class="md-ellipsis">
+      author
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CountTokensResponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      CountTokensResponse
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CountTokensResponse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CountTokensResponse.total_tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      total_tokens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CountTokensResponse.total_billable_characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      total_billable_characters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.InputOutputTextPair" class="md-nav__link">
+    <span class="md-ellipsis">
+      InputOutputTextPair
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="InputOutputTextPair">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.InputOutputTextPair.input_text" class="md-nav__link">
+    <span class="md-ellipsis">
+      input_text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.InputOutputTextPair.output_text" class="md-nav__link">
+    <span class="md-ellipsis">
+      output_text
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      TextEmbedding
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TextEmbedding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbedding.values" class="md-nav__link">
+    <span class="md-ellipsis">
+      values
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbedding.statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      statistics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbeddingInput" class="md-nav__link">
+    <span class="md-ellipsis">
+      TextEmbeddingInput
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TextEmbeddingInput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbeddingInput.text" class="md-nav__link">
+    <span class="md-ellipsis">
+      text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbeddingInput.task_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbeddingInput.title" class="md-nav__link">
+    <span class="md-ellipsis">
+      title
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse" class="md-nav__link">
+    <span class="md-ellipsis">
+      TextGenerationResponse
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TextGenerationResponse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.text" class="md-nav__link">
+    <span class="md-ellipsis">
+      text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.is_blocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      is_blocked
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.safety_attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      safety_attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.grounding_metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      grounding_metadata
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.raw_prediction_response" class="md-nav__link">
+    <span class="md-ellipsis">
+      raw_prediction_response
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec" class="md-nav__link">
+    <span class="md-ellipsis">
+      TuningEvaluationSpec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TuningEvaluationSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.evaluation_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      evaluation_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.evaluation_interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      evaluation_interval
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.enable_early_stopping" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable_early_stopping
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.enable_checkpoint_selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable_checkpoint_selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.tensorboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      tensorboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextGenerationSpec" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationTextGenerationSpec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationTextGenerationSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextGenerationSpec.ground_truth_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      ground_truth_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextGenerationSpec.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextSummarizationSpec" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationTextSummarizationSpec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationTextSummarizationSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextSummarizationSpec.ground_truth_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      ground_truth_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextSummarizationSpec.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationQuestionAnsweringSpec" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationQuestionAnsweringSpec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationQuestionAnsweringSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationQuestionAnsweringSpec.ground_truth_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      ground_truth_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationQuestionAnsweringSpec.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationTextClassificationSpec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationTextClassificationSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec.ground_truth_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      ground_truth_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec.target_column_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      target_column_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec.class_names" class="md-nav__link">
+    <span class="md-ellipsis">
+      class_names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationClassificationMetric
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationClassificationMetric">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.input_dataset_paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      input_dataset_paths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.label_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      label_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.auPrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      auPrc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.auRoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      auRoc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.logLoss" class="md-nav__link">
+    <span class="md-ellipsis">
+      logLoss
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.confidenceMetrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      confidenceMetrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.confusionMatrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      confusionMatrix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationMetric
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationMetric">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric.input_dataset_paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      input_dataset_paths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric.bleu" class="md-nav__link">
+    <span class="md-ellipsis">
+      bleu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric.rougeLSum" class="md-nav__link">
+    <span class="md-ellipsis">
+      rougeLSum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision_models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vision models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -398,108 +1259,247 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="language_models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.ChatModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatModel
+    </span>
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.ChatSession" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatSession
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CodeChatModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      CodeChatModel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CodeChatSession" class="md-nav__link">
+    <span class="md-ellipsis">
+      CodeChatSession
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CodeGenerationModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      CodeGenerationModel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      TextGenerationModel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbeddingModel" class="md-nav__link">
+    <span class="md-ellipsis">
+      TextEmbeddingModel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vertexai.preview.language_models.ChatMessage" class="md-nav__link">
     <span class="md-ellipsis">
       ChatMessage
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="ChatMessage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.ChatMessage.content" class="md-nav__link">
+    <span class="md-ellipsis">
+      content
+    </span>
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.ChatMessage.author" class="md-nav__link">
+    <span class="md-ellipsis">
+      author
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vertexai.preview.language_models.CountTokensResponse" class="md-nav__link">
     <span class="md-ellipsis">
       CountTokensResponse
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric" class="md-nav__link">
+    <nav class="md-nav" aria-label="CountTokensResponse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CountTokensResponse.total_tokens" class="md-nav__link">
     <span class="md-ellipsis">
-      EvaluationClassificationMetric
+      total_tokens
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vertexai.preview.language_models.EvaluationMetric" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.CountTokensResponse.total_billable_characters" class="md-nav__link">
     <span class="md-ellipsis">
-      EvaluationMetric
+      total_billable_characters
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vertexai.preview.language_models.EvaluationQuestionAnsweringSpec" class="md-nav__link">
-    <span class="md-ellipsis">
-      EvaluationQuestionAnsweringSpec
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec" class="md-nav__link">
-    <span class="md-ellipsis">
-      EvaluationTextClassificationSpec
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vertexai.preview.language_models.EvaluationTextGenerationSpec" class="md-nav__link">
-    <span class="md-ellipsis">
-      EvaluationTextGenerationSpec
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vertexai.preview.language_models.EvaluationTextSummarizationSpec" class="md-nav__link">
-    <span class="md-ellipsis">
-      EvaluationTextSummarizationSpec
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#vertexai.preview.language_models.InputOutputTextPair" class="md-nav__link">
     <span class="md-ellipsis">
       InputOutputTextPair
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="InputOutputTextPair">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.InputOutputTextPair.input_text" class="md-nav__link">
+    <span class="md-ellipsis">
+      input_text
+    </span>
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.InputOutputTextPair.output_text" class="md-nav__link">
+    <span class="md-ellipsis">
+      output_text
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vertexai.preview.language_models.TextEmbedding" class="md-nav__link">
     <span class="md-ellipsis">
       TextEmbedding
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="TextEmbedding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbedding.values" class="md-nav__link">
+    <span class="md-ellipsis">
+      values
+    </span>
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbedding.statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      statistics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vertexai.preview.language_models.TextEmbeddingInput" class="md-nav__link">
     <span class="md-ellipsis">
       TextEmbeddingInput
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="TextEmbeddingInput">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbeddingInput.text" class="md-nav__link">
+    <span class="md-ellipsis">
+      text
+    </span>
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbeddingInput.task_type" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextEmbeddingInput.title" class="md-nav__link">
+    <span class="md-ellipsis">
+      title
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vertexai.preview.language_models.TextGenerationResponse" class="md-nav__link">
     <span class="md-ellipsis">
       TextGenerationResponse
@@ -508,6 +1508,51 @@
   
     <nav class="md-nav" aria-label="TextGenerationResponse">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.text" class="md-nav__link">
+    <span class="md-ellipsis">
+      text
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.is_blocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      is_blocked
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      errors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.safety_attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      safety_attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TextGenerationResponse.grounding_metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      grounding_metadata
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#vertexai.preview.language_models.TextGenerationResponse.raw_prediction_response" class="md-nav__link">
@@ -522,13 +1567,357 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#vertexai.preview.language_models.TuningEvaluationSpec" class="md-nav__link">
     <span class="md-ellipsis">
       TuningEvaluationSpec
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="TuningEvaluationSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.evaluation_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      evaluation_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.evaluation_interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      evaluation_interval
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.enable_early_stopping" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable_early_stopping
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.enable_checkpoint_selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable_checkpoint_selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.TuningEvaluationSpec.tensorboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      tensorboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextGenerationSpec" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationTextGenerationSpec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationTextGenerationSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextGenerationSpec.ground_truth_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      ground_truth_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextGenerationSpec.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextSummarizationSpec" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationTextSummarizationSpec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationTextSummarizationSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextSummarizationSpec.ground_truth_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      ground_truth_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextSummarizationSpec.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationQuestionAnsweringSpec" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationQuestionAnsweringSpec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationQuestionAnsweringSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationQuestionAnsweringSpec.ground_truth_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      ground_truth_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationQuestionAnsweringSpec.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationTextClassificationSpec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationTextClassificationSpec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec.ground_truth_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      ground_truth_data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec.target_column_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      target_column_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec.class_names" class="md-nav__link">
+    <span class="md-ellipsis">
+      class_names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationTextClassificationSpec.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationClassificationMetric
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationClassificationMetric">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.input_dataset_paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      input_dataset_paths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.label_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      label_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.auPrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      auPrc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.auRoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      auRoc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.logLoss" class="md-nav__link">
+    <span class="md-ellipsis">
+      logLoss
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.confidenceMetrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      confidenceMetrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationClassificationMetric.confusionMatrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      confusionMatrix
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric" class="md-nav__link">
+    <span class="md-ellipsis">
+      EvaluationMetric
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EvaluationMetric">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric.input_dataset_paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      input_dataset_paths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric.task_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      task_name
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric.bleu" class="md-nav__link">
+    <span class="md-ellipsis">
+      bleu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vertexai.preview.language_models.EvaluationMetric.rougeLSum" class="md-nav__link">
+    <span class="md-ellipsis">
+      rougeLSum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -556,7 +1945,12 @@
 
 
 
-<a id="vertexai.preview.language_models"></a>
+<h2 id="vertexai.preview.language_models" class="doc doc-heading">
+            <span class="doc doc-object-name doc-module-name">vertexai.preview.language_models</span>
+
+
+</h2>
+
     <div class="doc doc-contents first">
 
       <p>Classes for working with language models.</p>
@@ -571,12 +1965,159 @@
 
 
 
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="vertexai.preview.language_models.ChatModel" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">ChatModel</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">ChatModel</span> <span class="o">=</span> <span class="n"><span title="vertexai.language_models._language_models._PreviewChatModel">_PreviewChatModel</span></span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="vertexai.preview.language_models.ChatSession" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">ChatSession</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">ChatSession</span> <span class="o">=</span> <span class="n"><span title="vertexai.language_models._language_models._PreviewChatSession">_PreviewChatSession</span></span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="vertexai.preview.language_models.CodeChatModel" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">CodeChatModel</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">CodeChatModel</span> <span class="o">=</span> <span class="n"><span title="vertexai.language_models._language_models._PreviewCodeChatModel">_PreviewCodeChatModel</span></span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="vertexai.preview.language_models.CodeChatSession" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">CodeChatSession</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">CodeChatSession</span> <span class="o">=</span> <span class="n"><span title="vertexai.language_models._language_models._PreviewCodeChatSession">_PreviewCodeChatSession</span></span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="vertexai.preview.language_models.CodeGenerationModel" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">CodeGenerationModel</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">CodeGenerationModel</span> <span class="o">=</span> <span class="n"><span title="vertexai.language_models._language_models._PreviewCodeGenerationModel">_PreviewCodeGenerationModel</span></span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="vertexai.preview.language_models.TextGenerationModel" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">TextGenerationModel</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">TextGenerationModel</span> <span class="o">=</span> <span class="n"><span title="vertexai.language_models._language_models._PreviewTextGenerationModel">_PreviewTextGenerationModel</span></span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="vertexai.preview.language_models.TextEmbeddingModel" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">TextEmbeddingModel</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">TextEmbeddingModel</span> <span class="o">=</span> <span class="n"><span title="vertexai.language_models._language_models._PreviewTextEmbeddingModel">_PreviewTextEmbeddingModel</span></span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
 
 <div class="doc doc-object doc-class">
 
 
 
-<h2 id="vertexai.preview.language_models.ChatMessage" class="doc doc-heading">
+<h3 id="vertexai.preview.language_models.ChatMessage" class="doc doc-heading">
             <span class="doc doc-object-name doc-class-name">ChatMessage</span>
 
 
@@ -584,8 +2125,13 @@
       <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
   </span>
 
-</h2>
-
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">ChatMessage</span><span class="p">(</span>
+    <span class="vm">__module__</span><span class="o">=</span><span class="s2">&quot;vertexai.language_models&quot;</span><span class="p">,</span>
+    <span class="n">content</span><span class="p">:</span> <span class="n">str</span><span class="p">,</span>
+    <span class="n">author</span><span class="p">:</span> <span class="n">str</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
@@ -602,7 +2148,7 @@
       </thead>
       <tbody>
           <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.ChatMessage.content">content</span></code></td>
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.ChatMessage.content" href="#vertexai.preview.language_models.ChatMessage.content">content</a></code></td>
             <td class="doc-attribute-details">
               <div class="doc-md-description">
                 <p>Content of the message.</p>
@@ -616,7 +2162,7 @@
             </td>
           </tr>
           <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.ChatMessage.author">author</span></code></td>
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.ChatMessage.author" href="#vertexai.preview.language_models.ChatMessage.author">author</a></code></td>
             <td class="doc-attribute-details">
               <div class="doc-md-description">
                 <p>Author of the message.</p>
@@ -632,35 +2178,6 @@
       </tbody>
     </table>
 
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">2571</span>
-<span class="normal">2572</span>
-<span class="normal">2573</span>
-<span class="normal">2574</span>
-<span class="normal">2575</span>
-<span class="normal">2576</span>
-<span class="normal">2577</span>
-<span class="normal">2578</span>
-<span class="normal">2579</span>
-<span class="normal">2580</span>
-<span class="normal">2581</span>
-<span class="normal">2582</span>
-<span class="normal">2583</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">ChatMessage</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;A chat message.</span>
-
-<span class="sd">    Attributes:</span>
-<span class="sd">        content: Content of the message.</span>
-<span class="sd">        author: Author of the message.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="vm">__module__</span> <span class="o">=</span> <span class="s2">&quot;vertexai.language_models&quot;</span>
-
-    <span class="n">content</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">author</span><span class="p">:</span> <span class="nb">str</span>
-</code></pre></div></td></tr></table></div>
-              </details>
 
 
 
@@ -671,6 +2188,48 @@
 
 
 
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.ChatMessage.content" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">content</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">content</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.ChatMessage.author" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">author</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">author</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
 
 
 
@@ -686,7 +2245,7 @@
 
 
 
-<h2 id="vertexai.preview.language_models.CountTokensResponse" class="doc doc-heading">
+<h3 id="vertexai.preview.language_models.CountTokensResponse" class="doc doc-heading">
             <span class="doc doc-object-name doc-class-name">CountTokensResponse</span>
 
 
@@ -694,8 +2253,13 @@
       <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
   </span>
 
-</h2>
-
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">CountTokensResponse</span><span class="p">(</span>
+    <span class="n">total_tokens</span><span class="p">:</span> <span class="n">int</span><span class="p">,</span>
+    <span class="n">total_billable_characters</span><span class="p">:</span> <span class="n">int</span><span class="p">,</span>
+    <span class="n">_count_tokens_response</span><span class="p">:</span> <span class="n"><span title="typing.Any">Any</span></span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
@@ -709,39 +2273,6 @@ Attributes:
         The total number of billable characters
         counted across all instances from the request.</p>
 
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">960</span>
-<span class="normal">961</span>
-<span class="normal">962</span>
-<span class="normal">963</span>
-<span class="normal">964</span>
-<span class="normal">965</span>
-<span class="normal">966</span>
-<span class="normal">967</span>
-<span class="normal">968</span>
-<span class="normal">969</span>
-<span class="normal">970</span>
-<span class="normal">971</span>
-<span class="normal">972</span>
-<span class="normal">973</span>
-<span class="normal">974</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">CountTokensResponse</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;The response from a count_tokens request.</span>
-<span class="sd">    Attributes:</span>
-<span class="sd">        total_tokens (int):</span>
-<span class="sd">            The total number of tokens counted across all</span>
-<span class="sd">            instances passed to the request.</span>
-<span class="sd">        total_billable_characters (int):</span>
-<span class="sd">            The total number of billable characters</span>
-<span class="sd">            counted across all instances from the request.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="n">total_tokens</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">total_billable_characters</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">_count_tokens_response</span><span class="p">:</span> <span class="n">Any</span>
-</code></pre></div></td></tr></table></div>
-              </details>
 
 
 
@@ -752,6 +2283,48 @@ Attributes:
 
 
 
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.CountTokensResponse.total_tokens" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">total_tokens</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">total_tokens</span><span class="p">:</span> <span class="n">int</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.CountTokensResponse.total_billable_characters" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">total_billable_characters</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">total_billable_characters</span><span class="p">:</span> <span class="n">int</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
 
 
 
@@ -767,7 +2340,1248 @@ Attributes:
 
 
 
-<h2 id="vertexai.preview.language_models.EvaluationClassificationMetric" class="doc doc-heading">
+<h3 id="vertexai.preview.language_models.InputOutputTextPair" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">InputOutputTextPair</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">InputOutputTextPair</span><span class="p">(</span>
+    <span class="vm">__module__</span><span class="o">=</span><span class="s2">&quot;vertexai.language_models&quot;</span><span class="p">,</span>
+    <span class="n">input_text</span><span class="p">:</span> <span class="n">str</span><span class="p">,</span>
+    <span class="n">output_text</span><span class="p">:</span> <span class="n">str</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+      <p>InputOutputTextPair represents a pair of input and output texts.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.InputOutputTextPair.input_text" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">input_text</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">input_text</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.InputOutputTextPair.output_text" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">output_text</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">output_text</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="vertexai.preview.language_models.TextEmbedding" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">TextEmbedding</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">TextEmbedding</span><span class="p">(</span>
+    <span class="vm">__module__</span><span class="o">=</span><span class="s2">&quot;vertexai.language_models&quot;</span><span class="p">,</span>
+    <span class="n">values</span><span class="p">:</span> <span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">float</span><span class="p">],</span>
+    <span class="n">statistics</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="vertexai.language_models._language_models.TextEmbeddingStatistics">TextEmbeddingStatistics</span></span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">_prediction_response</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="google.cloud.aiplatform.models.Prediction">Prediction</span></span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+      <p>Text embedding vector and statistics.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextEmbedding.values" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">values</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">values</span><span class="p">:</span> <span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextEmbedding.statistics" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">statistics</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">statistics</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="vertexai.language_models._language_models.TextEmbeddingStatistics">TextEmbeddingStatistics</span></span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="vertexai.preview.language_models.TextEmbeddingInput" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">TextEmbeddingInput</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">TextEmbeddingInput</span><span class="p">(</span>
+    <span class="vm">__module__</span><span class="o">=</span><span class="s2">&quot;vertexai.language_models&quot;</span><span class="p">,</span>
+    <span class="n">text</span><span class="p">:</span> <span class="n">str</span><span class="p">,</span>
+    <span class="n">task_type</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">title</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+      <p>Structural text embedding input.</p>
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">ATTRIBUTE</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.TextEmbeddingInput.text" href="#vertexai.preview.language_models.TextEmbeddingInput.text">text</a></code></td>
+            <td class="doc-attribute-details">
+              <div class="doc-md-description">
+                <p>The main text content to embed.</p>
+              </div>
+              <p>
+                  <span class="doc-attribute-annotation">
+                    <b>TYPE:</b>
+                      <code>str</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.TextEmbeddingInput.task_type" href="#vertexai.preview.language_models.TextEmbeddingInput.task_type">task_type</a></code></td>
+            <td class="doc-attribute-details">
+              <div class="doc-md-description">
+                <p>The name of the downstream task the embeddings will be used for.
+Valid values:
+RETRIEVAL_QUERY
+    Specifies the given text is a query in a search/retrieval setting.
+RETRIEVAL_DOCUMENT
+    Specifies the given text is a document from the corpus being searched.
+SEMANTIC_SIMILARITY
+    Specifies the given text will be used for STS.
+CLASSIFICATION
+    Specifies that the given text will be classified.
+CLUSTERING
+    Specifies that the embeddings will be used for clustering.
+QUESTION_ANSWERING
+    Specifies that the embeddings will be used for question answering.
+FACT_VERIFICATION
+    Specifies that the embeddings will be used for fact verification.</p>
+              </div>
+              <p>
+                  <span class="doc-attribute-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[str]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.TextEmbeddingInput.title" href="#vertexai.preview.language_models.TextEmbeddingInput.title">title</a></code></td>
+            <td class="doc-attribute-details">
+              <div class="doc-md-description">
+                <p>Optional identifier of the text content.</p>
+              </div>
+              <p>
+                  <span class="doc-attribute-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[str]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextEmbeddingInput.text" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">text</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">text</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextEmbeddingInput.task_type" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">task_type</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">task_type</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextEmbeddingInput.title" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">title</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">title</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="vertexai.preview.language_models.TextGenerationResponse" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">TextGenerationResponse</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">TextGenerationResponse</span><span class="p">(</span>
+    <span class="vm">__module__</span><span class="o">=</span><span class="s2">&quot;vertexai.language_models&quot;</span><span class="p">,</span>
+    <span class="n">text</span><span class="p">:</span> <span class="n">str</span><span class="p">,</span>
+    <span class="n">_prediction_response</span><span class="p">:</span> <span class="n"><span title="typing.Any">Any</span></span><span class="p">,</span>
+    <span class="n">is_blocked</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">errors</span><span class="p">:</span> <span class="n"><span title="typing.Tuple">Tuple</span></span><span class="p">[</span><span class="n">int</span><span class="p">]</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(),</span>
+    <span class="n">safety_attributes</span><span class="p">:</span> <span class="n"><span title="typing.Dict">Dict</span></span><span class="p">[</span><span class="n">str</span><span class="p">,</span> <span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(),</span>
+    <span class="n">grounding_metadata</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="vertexai.language_models._language_models.GroundingMetadata">GroundingMetadata</span></span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+      <p>TextGenerationResponse represents a response of a language model.
+Attributes:
+    text: The generated text
+    is_blocked: Whether the the request was blocked.
+    errors: The error codes indicate why the response was blocked.
+        Learn more information about safety errors here:
+        this documentation <a href="https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_errors">https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_errors</a>
+    safety_attributes: Scores for safety attributes.
+        Learn more about the safety attributes here:
+        <a href="https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_attribute_descriptions">https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_attribute_descriptions</a>
+    grounding_metadata: Metadata for grounding.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextGenerationResponse.text" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">text</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">text</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextGenerationResponse.is_blocked" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">is_blocked</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">is_blocked</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="kc">False</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextGenerationResponse.errors" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">errors</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">errors</span><span class="p">:</span> <span class="n"><span title="typing.Tuple">Tuple</span></span><span class="p">[</span><span class="n">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">tuple</span><span class="p">()</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextGenerationResponse.safety_attributes" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">safety_attributes</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">safety_attributes</span><span class="p">:</span> <span class="n"><span title="typing.Dict">Dict</span></span><span class="p">[</span><span class="n">str</span><span class="p">,</span> <span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="n"><span title="dataclasses.field">field</span></span><span class="p">(</span>
+    <span class="n">default_factory</span><span class="o">=</span><span class="n">dict</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextGenerationResponse.grounding_metadata" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">grounding_metadata</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">grounding_metadata</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="vertexai.language_models._language_models.GroundingMetadata">GroundingMetadata</span></span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TextGenerationResponse.raw_prediction_response" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">raw_prediction_response</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">raw_prediction_response</span><span class="p">:</span> <span class="n"><span title="google.cloud.aiplatform.models.Prediction">Prediction</span></span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+      <p>Raw prediction response.</p>
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="vertexai.preview.language_models.TuningEvaluationSpec" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">TuningEvaluationSpec</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">TuningEvaluationSpec</span><span class="p">(</span>
+    <span class="vm">__module__</span><span class="o">=</span><span class="s2">&quot;vertexai.language_models&quot;</span><span class="p">,</span>
+    <span class="n">evaluation_data</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">evaluation_interval</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">enable_early_stopping</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">enable_checkpoint_selection</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">tensorboard</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="google.cloud.aiplatform.Tensorboard">Tensorboard</span></span><span class="p">,</span> <span class="n">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+
+      <p>Specification for model evaluation to perform during tuning.</p>
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">ATTRIBUTE</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.TuningEvaluationSpec.evaluation_data" href="#vertexai.preview.language_models.TuningEvaluationSpec.evaluation_data">evaluation_data</a></code></td>
+            <td class="doc-attribute-details">
+              <div class="doc-md-description">
+                <p>GCS URI of the evaluation dataset. This will run
+model evaluation as part of the tuning job.</p>
+              </div>
+              <p>
+                  <span class="doc-attribute-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[str]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.TuningEvaluationSpec.evaluation_interval" href="#vertexai.preview.language_models.TuningEvaluationSpec.evaluation_interval">evaluation_interval</a></code></td>
+            <td class="doc-attribute-details">
+              <div class="doc-md-description">
+                <p>The evaluation will run at every
+evaluation_interval tuning steps. Default: 20.</p>
+              </div>
+              <p>
+                  <span class="doc-attribute-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[int]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.TuningEvaluationSpec.enable_early_stopping" href="#vertexai.preview.language_models.TuningEvaluationSpec.enable_early_stopping">enable_early_stopping</a></code></td>
+            <td class="doc-attribute-details">
+              <div class="doc-md-description">
+                <p>If True, the tuning may stop early before
+completing all the tuning steps. Requires evaluation_data.</p>
+              </div>
+              <p>
+                  <span class="doc-attribute-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[bool]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.TuningEvaluationSpec.enable_checkpoint_selection" href="#vertexai.preview.language_models.TuningEvaluationSpec.enable_checkpoint_selection">enable_checkpoint_selection</a></code></td>
+            <td class="doc-attribute-details">
+              <div class="doc-md-description">
+                <p>If set to True, the tuning process returns
+the best model checkpoint (based on model evaluation).
+If set to False, the latest model checkpoint is returned.
+If unset, the selection is only enabled for <code class="language-python highlight"><span class="o">*-</span><span class="n">bison</span><span class="o">@</span><span class="mi">001</span></code> models.</p>
+              </div>
+              <p>
+                  <span class="doc-attribute-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[bool]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code><a class="autorefs autorefs-internal" title="vertexai.preview.language_models.TuningEvaluationSpec.tensorboard" href="#vertexai.preview.language_models.TuningEvaluationSpec.tensorboard">tensorboard</a></code></td>
+            <td class="doc-attribute-details">
+              <div class="doc-md-description">
+                <p>Vertex Tensorboard where to write the evaluation metrics.
+The Tensorboard must be in the same location as the tuning job.</p>
+              </div>
+              <p>
+                  <span class="doc-attribute-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Optional">Optional</span>[<span title="typing.Union">Union</span>[<span title="google.cloud.aiplatform.Tensorboard">Tensorboard</span>, str]]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TuningEvaluationSpec.evaluation_data" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">evaluation_data</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">evaluation_data</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TuningEvaluationSpec.evaluation_interval" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">evaluation_interval</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">evaluation_interval</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TuningEvaluationSpec.enable_early_stopping" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">enable_early_stopping</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">enable_early_stopping</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TuningEvaluationSpec.enable_checkpoint_selection" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">enable_checkpoint_selection</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">enable_checkpoint_selection</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.TuningEvaluationSpec.tensorboard" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">tensorboard</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">tensorboard</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="google.cloud.aiplatform.Tensorboard">Tensorboard</span></span><span class="p">,</span> <span class="n">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="vertexai.preview.language_models.EvaluationTextGenerationSpec" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">EvaluationTextGenerationSpec</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">EvaluationTextGenerationSpec</span><span class="p">(</span>
+    <span class="n">ground_truth_data</span><span class="p">:</span> <span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">],</span> <span class="n">str</span><span class="p">,</span> <span class="n"><span title="pandas.DataFrame">DataFrame</span></span><span class="p">]</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="vertexai.language_models._evaluatable_language_models._EvaluationTaskSpec">_EvaluationTaskSpec</span></code></p>
+
+
+      <p>Spec for text generation model evaluation tasks.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationTextGenerationSpec.ground_truth_data" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">ground_truth_data</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">ground_truth_data</span><span class="p">:</span> <span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">],</span> <span class="n">str</span><span class="p">,</span> <span class="n"><span title="pandas.DataFrame">DataFrame</span></span><span class="p">]</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationTextGenerationSpec.task_name" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">task_name</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">task_name</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="vertexai.preview.language_models.EvaluationTextSummarizationSpec" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">EvaluationTextSummarizationSpec</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">EvaluationTextSummarizationSpec</span><span class="p">(</span>
+    <span class="n">ground_truth_data</span><span class="p">:</span> <span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">],</span> <span class="n">str</span><span class="p">,</span> <span class="n"><span title="pandas.DataFrame">DataFrame</span></span><span class="p">],</span>
+    <span class="n">task_name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="s2">&quot;summarization&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="vertexai.language_models._evaluatable_language_models._EvaluationTaskSpec">_EvaluationTaskSpec</span></code></p>
+
+
+      <p>Spec for text summarization model evaluation tasks.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationTextSummarizationSpec.ground_truth_data" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">ground_truth_data</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">ground_truth_data</span><span class="p">:</span> <span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">],</span> <span class="n">str</span><span class="p">,</span> <span class="n"><span title="pandas.DataFrame">DataFrame</span></span><span class="p">]</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationTextSummarizationSpec.task_name" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">task_name</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">task_name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="s1">&#39;summarization&#39;</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="vertexai.preview.language_models.EvaluationQuestionAnsweringSpec" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">EvaluationQuestionAnsweringSpec</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">EvaluationQuestionAnsweringSpec</span><span class="p">(</span>
+    <span class="n">ground_truth_data</span><span class="p">:</span> <span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">],</span> <span class="n">str</span><span class="p">,</span> <span class="n"><span title="pandas.DataFrame">DataFrame</span></span><span class="p">],</span>
+    <span class="n">task_name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="s2">&quot;question-answering&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="vertexai.language_models._evaluatable_language_models._EvaluationTaskSpec">_EvaluationTaskSpec</span></code></p>
+
+
+      <p>Spec for question answering model evaluation tasks.</p>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationQuestionAnsweringSpec.ground_truth_data" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">ground_truth_data</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">ground_truth_data</span><span class="p">:</span> <span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">],</span> <span class="n">str</span><span class="p">,</span> <span class="n"><span title="pandas.DataFrame">DataFrame</span></span><span class="p">]</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationQuestionAnsweringSpec.task_name" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">task_name</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">task_name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="s1">&#39;question-answering&#39;</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="vertexai.preview.language_models.EvaluationTextClassificationSpec" class="doc doc-heading">
+            <span class="doc doc-object-name doc-class-name">EvaluationTextClassificationSpec</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+  </span>
+
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">EvaluationTextClassificationSpec</span><span class="p">(</span>
+    <span class="n">ground_truth_data</span><span class="p">:</span> <span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">],</span> <span class="n">str</span><span class="p">,</span> <span class="n"><span title="pandas.DataFrame">DataFrame</span></span><span class="p">],</span>
+    <span class="n">target_column_name</span><span class="p">:</span> <span class="n">str</span><span class="p">,</span>
+    <span class="n">class_names</span><span class="p">:</span> <span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">],</span>
+<span class="p">)</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="vertexai.language_models._evaluatable_language_models._EvaluationTaskSpec">_EvaluationTaskSpec</span></code></p>
+
+
+      <p>Spec for text classification model evaluation tasks.</p>
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">PARAMETER</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>target_column_name</code></td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>Required. The label column in the dataset provided in <code class="language-python highlight"><span class="n">ground_truth_data</span></code>. Required when task_name='text-classification'.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code>str</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>class_names</code></td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>Required. A list of all possible label names in your dataset. Required when task_name='text-classification'.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.List">List</span>[str]</code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationTextClassificationSpec.ground_truth_data" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">ground_truth_data</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">ground_truth_data</span><span class="p">:</span> <span class="n"><span title="typing.Union">Union</span></span><span class="p">[</span><span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">],</span> <span class="n">str</span><span class="p">,</span> <span class="n"><span title="pandas.DataFrame">DataFrame</span></span><span class="p">]</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationTextClassificationSpec.target_column_name" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">target_column_name</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">target_column_name</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationTextClassificationSpec.class_names" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">class_names</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">class_names</span><span class="p">:</span> <span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n">str</span><span class="p">]</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationTextClassificationSpec.task_name" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">task_name</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">task_name</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="vertexai.preview.language_models.EvaluationClassificationMetric" class="doc doc-heading">
             <span class="doc doc-object-name doc-class-name">EvaluationClassificationMetric</span>
 
 
@@ -775,8 +3589,18 @@ Attributes:
       <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
   </span>
 
-</h2>
-
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">EvaluationClassificationMetric</span><span class="p">(</span>
+    <span class="n">label_name</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">auPrc</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">auRoc</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">logLoss</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">confidenceMetrics</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span>
+        <span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n"><span title="typing.Dict">Dict</span></span><span class="p">[</span><span class="n">str</span><span class="p">,</span> <span class="n"><span title="typing.Any">Any</span></span><span class="p">]]</span>
+    <span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">confusionMatrix</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="typing.Dict">Dict</span></span><span class="p">[</span><span class="n">str</span><span class="p">,</span> <span class="n"><span title="typing.Any">Any</span></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
@@ -908,65 +3732,6 @@ passed to evaluate().</p>
       </tbody>
     </table>
 
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_evaluatable_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">260</span>
-<span class="normal">261</span>
-<span class="normal">262</span>
-<span class="normal">263</span>
-<span class="normal">264</span>
-<span class="normal">265</span>
-<span class="normal">266</span>
-<span class="normal">267</span>
-<span class="normal">268</span>
-<span class="normal">269</span>
-<span class="normal">270</span>
-<span class="normal">271</span>
-<span class="normal">272</span>
-<span class="normal">273</span>
-<span class="normal">274</span>
-<span class="normal">275</span>
-<span class="normal">276</span>
-<span class="normal">277</span>
-<span class="normal">278</span>
-<span class="normal">279</span>
-<span class="normal">280</span>
-<span class="normal">281</span>
-<span class="normal">282</span>
-<span class="normal">283</span>
-<span class="normal">284</span>
-<span class="normal">285</span>
-<span class="normal">286</span>
-<span class="normal">287</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">EvaluationClassificationMetric</span><span class="p">(</span><span class="n">_EvaluationMetricBase</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;The evaluation metric response for classification metrics.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        label_name (str):</span>
-<span class="sd">            Optional. The name of the label associated with the metrics. This is only</span>
-<span class="sd">            returned when `only_summary_metrics=False` is passed to evaluate().</span>
-<span class="sd">        auPrc (float):</span>
-<span class="sd">            Optional. The area under the precision recall curve.</span>
-<span class="sd">        auRoc (float):</span>
-<span class="sd">            Optional. The area under the receiver operating characteristic curve.</span>
-<span class="sd">        logLoss (float):</span>
-<span class="sd">            Optional. Logarithmic loss.</span>
-<span class="sd">        confidenceMetrics (List[Dict[str, Any]]):</span>
-<span class="sd">            Optional. This is only returned when `only_summary_metrics=False` is</span>
-<span class="sd">            passed to evaluate().</span>
-<span class="sd">        confusionMatrix (Dict[str, Any]):</span>
-<span class="sd">          Optional. This is only returned when `only_summary_metrics=False` is</span>
-<span class="sd">          passed to evaluate().</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="n">label_name</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">auPrc</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">auRoc</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">logLoss</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">confidenceMetrics</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">confusionMatrix</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
-</code></pre></div></td></tr></table></div>
-              </details>
 
 
 
@@ -977,6 +3742,184 @@ passed to evaluate().</p>
 
 
 
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationClassificationMetric.input_dataset_paths" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">input_dataset_paths</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">input_dataset_paths</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+      <p>The Google Cloud Storage paths to the dataset used for this evaluation.</p>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationClassificationMetric.task_name" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">task_name</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">task_name</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+      <p>The type of evaluation task for the evaluation..</p>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationClassificationMetric.label_name" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">label_name</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">label_name</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationClassificationMetric.auPrc" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">auPrc</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">auPrc</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationClassificationMetric.auRoc" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">auRoc</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">auRoc</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationClassificationMetric.logLoss" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">logLoss</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">logLoss</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationClassificationMetric.confidenceMetrics" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">confidenceMetrics</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">confidenceMetrics</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="typing.List">List</span></span><span class="p">[</span><span class="n"><span title="typing.Dict">Dict</span></span><span class="p">[</span><span class="n">str</span><span class="p">,</span> <span class="n"><span title="typing.Any">Any</span></span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h4 id="vertexai.preview.language_models.EvaluationClassificationMetric.confusionMatrix" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">confusionMatrix</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">confusionMatrix</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n"><span title="typing.Dict">Dict</span></span><span class="p">[</span><span class="n">str</span><span class="p">,</span> <span class="n"><span title="typing.Any">Any</span></span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
 
 
 
@@ -992,7 +3935,7 @@ passed to evaluate().</p>
 
 
 
-<h2 id="vertexai.preview.language_models.EvaluationMetric" class="doc doc-heading">
+<h3 id="vertexai.preview.language_models.EvaluationMetric" class="doc doc-heading">
             <span class="doc doc-object-name doc-class-name">EvaluationMetric</span>
 
 
@@ -1000,8 +3943,12 @@ passed to evaluate().</p>
       <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
   </span>
 
-</h2>
-
+</h3>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="nf">EvaluationMetric</span><span class="p">(</span>
+    <span class="n">bleu</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">rougeLSum</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
             <p class="doc doc-class-bases">
@@ -1058,840 +4005,6 @@ passed to evaluate().</p>
       </tbody>
     </table>
 
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_evaluatable_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">245</span>
-<span class="normal">246</span>
-<span class="normal">247</span>
-<span class="normal">248</span>
-<span class="normal">249</span>
-<span class="normal">250</span>
-<span class="normal">251</span>
-<span class="normal">252</span>
-<span class="normal">253</span>
-<span class="normal">254</span>
-<span class="normal">255</span>
-<span class="normal">256</span>
-<span class="normal">257</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">EvaluationMetric</span><span class="p">(</span><span class="n">_EvaluationMetricBase</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;The evaluation metric response.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        bleu (float):</span>
-<span class="sd">            Optional. BLEU (Bilingual evauation understudy). Scores based on sacrebleu implementation.</span>
-<span class="sd">        rougeLSum (float):</span>
-<span class="sd">            Optional. ROUGE-L (Longest Common Subsequence) scoring at summary level.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="n">bleu</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">rougeLSum</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-</code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="vertexai.preview.language_models.EvaluationQuestionAnsweringSpec" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">EvaluationQuestionAnsweringSpec</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-            <p class="doc doc-class-bases">
-              Bases: <code><span title="vertexai.language_models._evaluatable_language_models._EvaluationTaskSpec">_EvaluationTaskSpec</span></code></p>
-
-
-      <p>Spec for question answering model evaluation tasks.</p>
-
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_evaluatable_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">216</span>
-<span class="normal">217</span>
-<span class="normal">218</span>
-<span class="normal">219</span>
-<span class="normal">220</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">EvaluationQuestionAnsweringSpec</span><span class="p">(</span><span class="n">_EvaluationTaskSpec</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Spec for question answering model evaluation tasks.&quot;&quot;&quot;</span>
-
-    <span class="n">task_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;question-answering&quot;</span>
-</code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="vertexai.preview.language_models.EvaluationTextClassificationSpec" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">EvaluationTextClassificationSpec</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-            <p class="doc doc-class-bases">
-              Bases: <code><span title="vertexai.language_models._evaluatable_language_models._EvaluationTaskSpec">_EvaluationTaskSpec</span></code></p>
-
-
-      <p>Spec for text classification model evaluation tasks.</p>
-
-
-<table>
-      <thead>
-        <tr>
-          <th><span class="doc-section-title">PARAMETER</span></th>
-          <th><span>DESCRIPTION</span></th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td><code>target_column_name</code></td>
-            <td class="doc-param-details">
-              <div class="doc-md-description">
-                <p>Required. The label column in the dataset provided in <code class="language-python highlight"><span class="n">ground_truth_data</span></code>. Required when task_name='text-classification'.</p>
-              </div>
-              <p>
-                  <span class="doc-param-annotation">
-                    <b>TYPE:</b>
-                      <code>str</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code>class_names</code></td>
-            <td class="doc-param-details">
-              <div class="doc-md-description">
-                <p>Required. A list of all possible label names in your dataset. Required when task_name='text-classification'.</p>
-              </div>
-              <p>
-                  <span class="doc-param-annotation">
-                    <b>TYPE:</b>
-                      <code><span title="typing.List">List</span>[str]</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_evaluatable_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">188</span>
-<span class="normal">189</span>
-<span class="normal">190</span>
-<span class="normal">191</span>
-<span class="normal">192</span>
-<span class="normal">193</span>
-<span class="normal">194</span>
-<span class="normal">195</span>
-<span class="normal">196</span>
-<span class="normal">197</span>
-<span class="normal">198</span>
-<span class="normal">199</span>
-<span class="normal">200</span>
-<span class="normal">201</span>
-<span class="normal">202</span>
-<span class="normal">203</span>
-<span class="normal">204</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">EvaluationTextClassificationSpec</span><span class="p">(</span><span class="n">_EvaluationTaskSpec</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Spec for text classification model evaluation tasks.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">        target_column_name (str):</span>
-<span class="sd">            Required. The label column in the dataset provided in `ground_truth_data`. Required when task_name=&#39;text-classification&#39;.</span>
-<span class="sd">        class_names (List[str]):</span>
-<span class="sd">            Required. A list of all possible label names in your dataset. Required when task_name=&#39;text-classification&#39;.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="n">target_column_name</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">class_names</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">task_name</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;text-classification&quot;</span>
-</code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="vertexai.preview.language_models.EvaluationTextGenerationSpec" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">EvaluationTextGenerationSpec</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-            <p class="doc doc-class-bases">
-              Bases: <code><span title="vertexai.language_models._evaluatable_language_models._EvaluationTaskSpec">_EvaluationTaskSpec</span></code></p>
-
-
-      <p>Spec for text generation model evaluation tasks.</p>
-
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_evaluatable_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">207</span>
-<span class="normal">208</span>
-<span class="normal">209</span>
-<span class="normal">210</span>
-<span class="normal">211</span>
-<span class="normal">212</span>
-<span class="normal">213</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">EvaluationTextGenerationSpec</span><span class="p">(</span><span class="n">_EvaluationTaskSpec</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Spec for text generation model evaluation tasks.&quot;&quot;&quot;</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">task_name</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;text-generation&quot;</span>
-</code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="vertexai.preview.language_models.EvaluationTextSummarizationSpec" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">EvaluationTextSummarizationSpec</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-            <p class="doc doc-class-bases">
-              Bases: <code><span title="vertexai.language_models._evaluatable_language_models._EvaluationTaskSpec">_EvaluationTaskSpec</span></code></p>
-
-
-      <p>Spec for text summarization model evaluation tasks.</p>
-
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_evaluatable_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">223</span>
-<span class="normal">224</span>
-<span class="normal">225</span>
-<span class="normal">226</span>
-<span class="normal">227</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">EvaluationTextSummarizationSpec</span><span class="p">(</span><span class="n">_EvaluationTaskSpec</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Spec for text summarization model evaluation tasks.&quot;&quot;&quot;</span>
-
-    <span class="n">task_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;summarization&quot;</span>
-</code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="vertexai.preview.language_models.InputOutputTextPair" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">InputOutputTextPair</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-
-
-      <p>InputOutputTextPair represents a pair of input and output texts.</p>
-
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">2561</span>
-<span class="normal">2562</span>
-<span class="normal">2563</span>
-<span class="normal">2564</span>
-<span class="normal">2565</span>
-<span class="normal">2566</span>
-<span class="normal">2567</span>
-<span class="normal">2568</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">InputOutputTextPair</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;InputOutputTextPair represents a pair of input and output texts.&quot;&quot;&quot;</span>
-
-    <span class="vm">__module__</span> <span class="o">=</span> <span class="s2">&quot;vertexai.language_models&quot;</span>
-
-    <span class="n">input_text</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">output_text</span><span class="p">:</span> <span class="nb">str</span>
-</code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="vertexai.preview.language_models.TextEmbedding" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">TextEmbedding</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-
-
-      <p>Text embedding vector and statistics.</p>
-
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">2520</span>
-<span class="normal">2521</span>
-<span class="normal">2522</span>
-<span class="normal">2523</span>
-<span class="normal">2524</span>
-<span class="normal">2525</span>
-<span class="normal">2526</span>
-<span class="normal">2527</span>
-<span class="normal">2528</span>
-<span class="normal">2529</span>
-<span class="normal">2530</span>
-<span class="normal">2531</span>
-<span class="normal">2532</span>
-<span class="normal">2533</span>
-<span class="normal">2534</span>
-<span class="normal">2535</span>
-<span class="normal">2536</span>
-<span class="normal">2537</span>
-<span class="normal">2538</span>
-<span class="normal">2539</span>
-<span class="normal">2540</span>
-<span class="normal">2541</span>
-<span class="normal">2542</span>
-<span class="normal">2543</span>
-<span class="normal">2544</span>
-<span class="normal">2545</span>
-<span class="normal">2546</span>
-<span class="normal">2547</span>
-<span class="normal">2548</span>
-<span class="normal">2549</span>
-<span class="normal">2550</span>
-<span class="normal">2551</span>
-<span class="normal">2552</span>
-<span class="normal">2553</span>
-<span class="normal">2554</span>
-<span class="normal">2555</span>
-<span class="normal">2556</span>
-<span class="normal">2557</span>
-<span class="normal">2558</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">TextEmbedding</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Text embedding vector and statistics.&quot;&quot;&quot;</span>
-
-    <span class="vm">__module__</span> <span class="o">=</span> <span class="s2">&quot;vertexai.language_models&quot;</span>
-
-    <span class="n">values</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>
-    <span class="n">statistics</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">TextEmbeddingStatistics</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">_prediction_response</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">aiplatform</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Prediction</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-
-    <span class="nd">@classmethod</span>
-    <span class="k">def</span> <span class="nf">_parse_text_embedding_response</span><span class="p">(</span>
-        <span class="bp">cls</span><span class="p">,</span> <span class="n">prediction_response</span><span class="p">:</span> <span class="n">aiplatform</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Prediction</span><span class="p">,</span> <span class="n">prediction_index</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;TextEmbedding&quot;</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Creates a `TextEmbedding` object from a prediction.</span>
-
-<span class="sd">        Args:</span>
-<span class="sd">            prediction_response: `aiplatform.models.Prediction` object.</span>
-
-<span class="sd">        Returns:</span>
-<span class="sd">            `TextEmbedding` object.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">prediction</span> <span class="o">=</span> <span class="n">prediction_response</span><span class="o">.</span><span class="n">predictions</span><span class="p">[</span><span class="n">prediction_index</span><span class="p">]</span>
-        <span class="n">is_prediction_from_pretrained_models</span> <span class="o">=</span> <span class="nb">isinstance</span><span class="p">(</span>
-            <span class="n">prediction</span><span class="p">,</span> <span class="n">collections</span><span class="o">.</span><span class="n">abc</span><span class="o">.</span><span class="n">Mapping</span>
-        <span class="p">)</span>
-        <span class="k">if</span> <span class="n">is_prediction_from_pretrained_models</span><span class="p">:</span>
-            <span class="n">embeddings</span> <span class="o">=</span> <span class="n">prediction</span><span class="p">[</span><span class="s2">&quot;embeddings&quot;</span><span class="p">]</span>
-            <span class="n">embedding_stats</span> <span class="o">=</span> <span class="n">embeddings</span><span class="p">[</span><span class="s2">&quot;statistics&quot;</span><span class="p">]</span>
-            <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span>
-                <span class="n">values</span><span class="o">=</span><span class="n">embeddings</span><span class="p">[</span><span class="s2">&quot;values&quot;</span><span class="p">],</span>
-                <span class="n">statistics</span><span class="o">=</span><span class="n">TextEmbeddingStatistics</span><span class="p">(</span>
-                    <span class="n">token_count</span><span class="o">=</span><span class="n">embedding_stats</span><span class="p">[</span><span class="s2">&quot;token_count&quot;</span><span class="p">],</span>
-                    <span class="n">truncated</span><span class="o">=</span><span class="n">embedding_stats</span><span class="p">[</span><span class="s2">&quot;truncated&quot;</span><span class="p">],</span>
-                <span class="p">),</span>
-                <span class="n">_prediction_response</span><span class="o">=</span><span class="n">prediction_response</span><span class="p">,</span>
-            <span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="n">prediction</span><span class="p">,</span> <span class="n">_prediction_response</span><span class="o">=</span><span class="n">prediction_response</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="vertexai.preview.language_models.TextEmbeddingInput" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">TextEmbeddingInput</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-
-
-      <p>Structural text embedding input.</p>
-
-
-<table>
-      <thead>
-        <tr>
-          <th><span class="doc-section-title">ATTRIBUTE</span></th>
-          <th><span>DESCRIPTION</span></th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.TextEmbeddingInput.text">text</span></code></td>
-            <td class="doc-attribute-details">
-              <div class="doc-md-description">
-                <p>The main text content to embed.</p>
-              </div>
-              <p>
-                  <span class="doc-attribute-annotation">
-                    <b>TYPE:</b>
-                      <code>str</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.TextEmbeddingInput.task_type">task_type</span></code></td>
-            <td class="doc-attribute-details">
-              <div class="doc-md-description">
-                <p>The name of the downstream task the embeddings will be used for.
-Valid values:
-RETRIEVAL_QUERY
-    Specifies the given text is a query in a search/retrieval setting.
-RETRIEVAL_DOCUMENT
-    Specifies the given text is a document from the corpus being searched.
-SEMANTIC_SIMILARITY
-    Specifies the given text will be used for STS.
-CLASSIFICATION
-    Specifies that the given text will be classified.
-CLUSTERING
-    Specifies that the embeddings will be used for clustering.
-QUESTION_ANSWERING
-    Specifies that the embeddings will be used for question answering.
-FACT_VERIFICATION
-    Specifies that the embeddings will be used for fact verification.</p>
-              </div>
-              <p>
-                  <span class="doc-attribute-annotation">
-                    <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[str]</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.TextEmbeddingInput.title">title</span></code></td>
-            <td class="doc-attribute-details">
-              <div class="doc-md-description">
-                <p>Optional identifier of the text content.</p>
-              </div>
-              <p>
-                  <span class="doc-attribute-annotation">
-                    <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[str]</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">2073</span>
-<span class="normal">2074</span>
-<span class="normal">2075</span>
-<span class="normal">2076</span>
-<span class="normal">2077</span>
-<span class="normal">2078</span>
-<span class="normal">2079</span>
-<span class="normal">2080</span>
-<span class="normal">2081</span>
-<span class="normal">2082</span>
-<span class="normal">2083</span>
-<span class="normal">2084</span>
-<span class="normal">2085</span>
-<span class="normal">2086</span>
-<span class="normal">2087</span>
-<span class="normal">2088</span>
-<span class="normal">2089</span>
-<span class="normal">2090</span>
-<span class="normal">2091</span>
-<span class="normal">2092</span>
-<span class="normal">2093</span>
-<span class="normal">2094</span>
-<span class="normal">2095</span>
-<span class="normal">2096</span>
-<span class="normal">2097</span>
-<span class="normal">2098</span>
-<span class="normal">2099</span>
-<span class="normal">2100</span>
-<span class="normal">2101</span>
-<span class="normal">2102</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">TextEmbeddingInput</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Structural text embedding input.</span>
-
-<span class="sd">    Attributes:</span>
-<span class="sd">        text: The main text content to embed.</span>
-<span class="sd">        task_type: The name of the downstream task the embeddings will be used for.</span>
-<span class="sd">            Valid values:</span>
-<span class="sd">            RETRIEVAL_QUERY</span>
-<span class="sd">                Specifies the given text is a query in a search/retrieval setting.</span>
-<span class="sd">            RETRIEVAL_DOCUMENT</span>
-<span class="sd">                Specifies the given text is a document from the corpus being searched.</span>
-<span class="sd">            SEMANTIC_SIMILARITY</span>
-<span class="sd">                Specifies the given text will be used for STS.</span>
-<span class="sd">            CLASSIFICATION</span>
-<span class="sd">                Specifies that the given text will be classified.</span>
-<span class="sd">            CLUSTERING</span>
-<span class="sd">                Specifies that the embeddings will be used for clustering.</span>
-<span class="sd">            QUESTION_ANSWERING</span>
-<span class="sd">                Specifies that the embeddings will be used for question answering.</span>
-<span class="sd">            FACT_VERIFICATION</span>
-<span class="sd">                Specifies that the embeddings will be used for fact verification.</span>
-<span class="sd">        title: Optional identifier of the text content.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="vm">__module__</span> <span class="o">=</span> <span class="s2">&quot;vertexai.language_models&quot;</span>
-
-    <span class="n">text</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">task_type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">title</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-</code></pre></div></td></tr></table></div>
-              </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="vertexai.preview.language_models.TextGenerationResponse" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">TextGenerationResponse</span>
-
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
-  </span>
-
-</h2>
-
-
-    <div class="doc doc-contents ">
-
-
-      <p>TextGenerationResponse represents a response of a language model.
-Attributes:
-    text: The generated text
-    is_blocked: Whether the the request was blocked.
-    errors: The error codes indicate why the response was blocked.
-        Learn more information about safety errors here:
-        this documentation <a href="https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_errors">https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_errors</a>
-    safety_attributes: Scores for safety attributes.
-        Learn more about the safety attributes here:
-        <a href="https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_attribute_descriptions">https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_attribute_descriptions</a>
-    grounding_metadata: Metadata for grounding.</p>
-
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1239</span>
-<span class="normal">1240</span>
-<span class="normal">1241</span>
-<span class="normal">1242</span>
-<span class="normal">1243</span>
-<span class="normal">1244</span>
-<span class="normal">1245</span>
-<span class="normal">1246</span>
-<span class="normal">1247</span>
-<span class="normal">1248</span>
-<span class="normal">1249</span>
-<span class="normal">1250</span>
-<span class="normal">1251</span>
-<span class="normal">1252</span>
-<span class="normal">1253</span>
-<span class="normal">1254</span>
-<span class="normal">1255</span>
-<span class="normal">1256</span>
-<span class="normal">1257</span>
-<span class="normal">1258</span>
-<span class="normal">1259</span>
-<span class="normal">1260</span>
-<span class="normal">1261</span>
-<span class="normal">1262</span>
-<span class="normal">1263</span>
-<span class="normal">1264</span>
-<span class="normal">1265</span>
-<span class="normal">1266</span>
-<span class="normal">1267</span>
-<span class="normal">1268</span>
-<span class="normal">1269</span>
-<span class="normal">1270</span>
-<span class="normal">1271</span>
-<span class="normal">1272</span>
-<span class="normal">1273</span>
-<span class="normal">1274</span>
-<span class="normal">1275</span>
-<span class="normal">1276</span>
-<span class="normal">1277</span>
-<span class="normal">1278</span>
-<span class="normal">1279</span>
-<span class="normal">1280</span>
-<span class="normal">1281</span>
-<span class="normal">1282</span>
-<span class="normal">1283</span>
-<span class="normal">1284</span>
-<span class="normal">1285</span>
-<span class="normal">1286</span>
-<span class="normal">1287</span>
-<span class="normal">1288</span>
-<span class="normal">1289</span>
-<span class="normal">1290</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">TextGenerationResponse</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;TextGenerationResponse represents a response of a language model.</span>
-<span class="sd">    Attributes:</span>
-<span class="sd">        text: The generated text</span>
-<span class="sd">        is_blocked: Whether the the request was blocked.</span>
-<span class="sd">        errors: The error codes indicate why the response was blocked.</span>
-<span class="sd">            Learn more information about safety errors here:</span>
-<span class="sd">            this documentation https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_errors</span>
-<span class="sd">        safety_attributes: Scores for safety attributes.</span>
-<span class="sd">            Learn more about the safety attributes here:</span>
-<span class="sd">            https://cloud.google.com/vertex-ai/docs/generative-ai/learn/responsible-ai#safety_attribute_descriptions</span>
-<span class="sd">        grounding_metadata: Metadata for grounding.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="vm">__module__</span> <span class="o">=</span> <span class="s2">&quot;vertexai.language_models&quot;</span>
-
-    <span class="n">text</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">_prediction_response</span><span class="p">:</span> <span class="n">Any</span>
-    <span class="n">is_blocked</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
-    <span class="n">errors</span><span class="p">:</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">()</span>
-    <span class="n">safety_attributes</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataclasses</span><span class="o">.</span><span class="n">field</span><span class="p">(</span><span class="n">default_factory</span><span class="o">=</span><span class="nb">dict</span><span class="p">)</span>
-    <span class="n">grounding_metadata</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">GroundingMetadata</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-
-    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span>
-        <span class="c1"># Falling back to the full representation</span>
-        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">grounding_metadata</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">return</span> <span class="p">(</span>
-                <span class="s2">&quot;TextGenerationResponse(&quot;</span>
-                <span class="sa">f</span><span class="s2">&quot;text=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="si">!r}</span><span class="s2">&quot;</span>
-                <span class="sa">f</span><span class="s2">&quot;, is_blocked=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_blocked</span><span class="si">!r}</span><span class="s2">&quot;</span>
-                <span class="sa">f</span><span class="s2">&quot;, errors=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">errors</span><span class="si">!r}</span><span class="s2">&quot;</span>
-                <span class="sa">f</span><span class="s2">&quot;, safety_attributes=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">safety_attributes</span><span class="si">!r}</span><span class="s2">&quot;</span>
-                <span class="sa">f</span><span class="s2">&quot;, grounding_metadata=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">grounding_metadata</span><span class="si">!r}</span><span class="s2">&quot;</span>
-                <span class="s2">&quot;)&quot;</span>
-            <span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="p">(</span>
-                <span class="s2">&quot;TextGenerationResponse(&quot;</span>
-                <span class="sa">f</span><span class="s2">&quot;text=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="si">!r}</span><span class="s2">&quot;</span>
-                <span class="sa">f</span><span class="s2">&quot;, is_blocked=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_blocked</span><span class="si">!r}</span><span class="s2">&quot;</span>
-                <span class="sa">f</span><span class="s2">&quot;, errors=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">errors</span><span class="si">!r}</span><span class="s2">&quot;</span>
-                <span class="sa">f</span><span class="s2">&quot;, safety_attributes=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">safety_attributes</span><span class="si">!r}</span><span class="s2">&quot;</span>
-                <span class="s2">&quot;)&quot;</span>
-            <span class="p">)</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">raw_prediction_response</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">aiplatform</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Prediction</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Raw prediction response.&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_prediction_response</span>
-</code></pre></div></td></tr></table></div>
-              </details>
 
 
 
@@ -1907,209 +4020,91 @@ Attributes:
 
 
 
-<h3 id="vertexai.preview.language_models.TextGenerationResponse.raw_prediction_response" class="doc doc-heading">
-            <span class="doc doc-object-name doc-attribute-name">raw_prediction_response</span>
+<h4 id="vertexai.preview.language_models.EvaluationMetric.input_dataset_paths" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">input_dataset_paths</span>
 
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-property"><code>property</code></small>
   </span>
 
-</h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">raw_prediction_response</span><span class="p">:</span> <span class="n">Prediction</span>
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">input_dataset_paths</span><span class="p">:</span> <span class="n">str</span>
 </code></pre></div>
 
     <div class="doc doc-contents ">
 
-      <p>Raw prediction response.</p>
+      <p>The Google Cloud Storage paths to the dataset used for this evaluation.</p>
     </div>
 
 </div>
 
+<div class="doc doc-object doc-attribute">
 
 
 
-
-  </div>
-
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-class">
-
-
-
-<h2 id="vertexai.preview.language_models.TuningEvaluationSpec" class="doc doc-heading">
-            <span class="doc doc-object-name doc-class-name">TuningEvaluationSpec</span>
+<h4 id="vertexai.preview.language_models.EvaluationMetric.task_name" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">task_name</span>
 
 
   <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-dataclass"><code>dataclass</code></small>
+      <small class="doc doc-label doc-label-property"><code>property</code></small>
   </span>
 
-</h2>
-
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">task_name</span><span class="p">:</span> <span class="n">str</span>
+</code></pre></div>
 
     <div class="doc doc-contents ">
 
+      <p>The type of evaluation task for the evaluation..</p>
+    </div>
 
-      <p>Specification for model evaluation to perform during tuning.</p>
+</div>
 
-
-<table>
-      <thead>
-        <tr>
-          <th><span class="doc-section-title">ATTRIBUTE</span></th>
-          <th><span>DESCRIPTION</span></th>
-        </tr>
-      </thead>
-      <tbody>
-          <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.TuningEvaluationSpec.evaluation_data">evaluation_data</span></code></td>
-            <td class="doc-attribute-details">
-              <div class="doc-md-description">
-                <p>GCS URI of the evaluation dataset. This will run
-model evaluation as part of the tuning job.</p>
-              </div>
-              <p>
-                  <span class="doc-attribute-annotation">
-                    <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[str]</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.TuningEvaluationSpec.evaluation_interval">evaluation_interval</span></code></td>
-            <td class="doc-attribute-details">
-              <div class="doc-md-description">
-                <p>The evaluation will run at every
-evaluation_interval tuning steps. Default: 20.</p>
-              </div>
-              <p>
-                  <span class="doc-attribute-annotation">
-                    <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[int]</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.TuningEvaluationSpec.enable_early_stopping">enable_early_stopping</span></code></td>
-            <td class="doc-attribute-details">
-              <div class="doc-md-description">
-                <p>If True, the tuning may stop early before
-completing all the tuning steps. Requires evaluation_data.</p>
-              </div>
-              <p>
-                  <span class="doc-attribute-annotation">
-                    <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[bool]</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.TuningEvaluationSpec.enable_checkpoint_selection">enable_checkpoint_selection</span></code></td>
-            <td class="doc-attribute-details">
-              <div class="doc-md-description">
-                <p>If set to True, the tuning process returns
-the best model checkpoint (based on model evaluation).
-If set to False, the latest model checkpoint is returned.
-If unset, the selection is only enabled for <code class="language-python highlight"><span class="o">*-</span><span class="n">bison</span><span class="o">@</span><span class="mi">001</span></code> models.</p>
-              </div>
-              <p>
-                  <span class="doc-attribute-annotation">
-                    <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[bool]</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-          <tr class="doc-section-item">
-            <td><code><span title="vertexai.preview.language_models.TuningEvaluationSpec.tensorboard">tensorboard</span></code></td>
-            <td class="doc-attribute-details">
-              <div class="doc-md-description">
-                <p>Vertex Tensorboard where to write the evaluation metrics.
-The Tensorboard must be in the same location as the tuning job.</p>
-              </div>
-              <p>
-                  <span class="doc-attribute-annotation">
-                    <b>TYPE:</b>
-                      <code><span title="typing.Optional">Optional</span>[<span title="typing.Union">Union</span>[<span title="google.cloud.aiplatform.Tensorboard">Tensorboard</span>, str]]</code>
-                  </span>
-              </p>
-            </td>
-          </tr>
-      </tbody>
-    </table>
-
-              <details class="quote">
-                <summary>Source code in <code>vertexai\language_models\_language_models.py</code></summary>
-                <div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1016</span>
-<span class="normal">1017</span>
-<span class="normal">1018</span>
-<span class="normal">1019</span>
-<span class="normal">1020</span>
-<span class="normal">1021</span>
-<span class="normal">1022</span>
-<span class="normal">1023</span>
-<span class="normal">1024</span>
-<span class="normal">1025</span>
-<span class="normal">1026</span>
-<span class="normal">1027</span>
-<span class="normal">1028</span>
-<span class="normal">1029</span>
-<span class="normal">1030</span>
-<span class="normal">1031</span>
-<span class="normal">1032</span>
-<span class="normal">1033</span>
-<span class="normal">1034</span>
-<span class="normal">1035</span>
-<span class="normal">1036</span>
-<span class="normal">1037</span>
-<span class="normal">1038</span>
-<span class="normal">1039</span>
-<span class="normal">1040</span>
-<span class="normal">1041</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@dataclasses</span><span class="o">.</span><span class="n">dataclass</span>
-<span class="k">class</span> <span class="nc">TuningEvaluationSpec</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Specification for model evaluation to perform during tuning.</span>
-
-<span class="sd">    Attributes:</span>
-<span class="sd">        evaluation_data: GCS URI of the evaluation dataset. This will run</span>
-<span class="sd">            model evaluation as part of the tuning job.</span>
-<span class="sd">        evaluation_interval: The evaluation will run at every</span>
-<span class="sd">            evaluation_interval tuning steps. Default: 20.</span>
-<span class="sd">        enable_early_stopping: If True, the tuning may stop early before</span>
-<span class="sd">            completing all the tuning steps. Requires evaluation_data.</span>
-<span class="sd">        enable_checkpoint_selection: If set to True, the tuning process returns</span>
-<span class="sd">            the best model checkpoint (based on model evaluation).</span>
-<span class="sd">            If set to False, the latest model checkpoint is returned.</span>
-<span class="sd">            If unset, the selection is only enabled for `*-bison@001` models.</span>
-<span class="sd">        tensorboard: Vertex Tensorboard where to write the evaluation metrics.</span>
-<span class="sd">            The Tensorboard must be in the same location as the tuning job.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="vm">__module__</span> <span class="o">=</span> <span class="s2">&quot;vertexai.language_models&quot;</span>
-
-    <span class="n">evaluation_data</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">evaluation_interval</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">enable_early_stopping</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">enable_checkpoint_selection</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">tensorboard</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">aiplatform</span><span class="o">.</span><span class="n">Tensorboard</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
-</code></pre></div></td></tr></table></div>
-              </details>
+<div class="doc doc-object doc-attribute">
 
 
 
-  <div class="doc doc-children">
+<h4 id="vertexai.preview.language_models.EvaluationMetric.bleu" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">bleu</span>
+
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">bleu</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
 
 
 
+<h4 id="vertexai.preview.language_models.EvaluationMetric.rougeLSum" class="doc doc-heading">
+            <span class="doc doc-object-name doc-attribute-name">rougeLSum</span>
 
 
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
 
+</h4>
+<div class="language-python doc-signature highlight"><pre><span></span><code><span class="n">rougeLSum</span><span class="p">:</span> <span class="n"><span title="typing.Optional">Optional</span></span><span class="p">[</span><span class="n">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+    </div>
+
+</div>
 
 
 
